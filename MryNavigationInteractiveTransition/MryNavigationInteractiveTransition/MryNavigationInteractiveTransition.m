@@ -11,9 +11,13 @@
 @interface MryNavigationInteractiveTransition ()
 @property (nonatomic, weak) UINavigationController *vc;
 @property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactivePopTransition;
+@property (nonatomic,strong) NSDate *startTime;
+
 @end
 
 @implementation MryNavigationInteractiveTransition
+
+@synthesize startTime;
 
 - (instancetype)initWithViewController:(UIViewController *)vc
 {
@@ -39,6 +43,10 @@
     progress = MIN(1.0, MAX(0.0, progress));
     if (recognizer.state == UIGestureRecognizerStateBegan) {
         /**
+         *  记录开始时间
+         */
+        startTime = [NSDate date];
+        /**
          *  手势开始，新建一个监控对象
          */
         self.interactivePopTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
@@ -57,9 +65,14 @@
     else if (recognizer.state == UIGestureRecognizerStateEnded || recognizer.state == UIGestureRecognizerStateCancelled) {
         
         /**
-         *  手势结束时如果进度大于xxx，那么就完成pop操作，否则重新来过。
+         *  计算时间差
          */
-        if (progress > 0.3f) {
+        NSTimeInterval timeInterval = - [startTime timeIntervalSinceNow];
+        
+        /**
+         *  手势结束时如果进度大于xxx 或 快速向右拖动，那么就完成pop操作，否则重新来过。
+         */
+        if (progress > 0.4f || (timeInterval < 0.1f && [recognizer translationInView:recognizer.view].x > 15.f && [recognizer translationInView:recognizer.view].y < 10.f && [recognizer translationInView:recognizer.view].y > -10.f)) {
             self.interactivePopTransition.completionSpeed = 0.7f;
             [self.interactivePopTransition finishInteractiveTransition];
         }
@@ -67,7 +80,7 @@
             self.interactivePopTransition.completionSpeed = 0.3f;
             [self.interactivePopTransition cancelInteractiveTransition];
         }
-
+        
         self.interactivePopTransition = nil;
     }
     
@@ -82,19 +95,19 @@
      */
     if (operation == UINavigationControllerOperationPop)
         return [[MryPopAnimation alloc] init];
-
+    
     return nil;
 }
 
 - (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
                          interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
-
+    
     /**
      *  方法2会传给你当前的动画对象animationController，判断如果是我们自定义的Pop动画对象，那么就返回interactivePopTransition来监控动画完成度。
      */
     if ([animationController isKindOfClass:[MryPopAnimation class]])
         return self.interactivePopTransition;
-
+    
     return nil;
 }
 
