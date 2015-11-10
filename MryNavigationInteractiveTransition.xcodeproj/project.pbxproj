@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		641727701BEC2925009FB4FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6417276F1BEC2925009FB4FB /* main.m */; };
+		641727731BEC2925009FB4FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 641727721BEC2925009FB4FB /* AppDelegate.m */; };
+		641727761BEC2925009FB4FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 641727751BEC2925009FB4FB /* ViewController.m */; };
+		641727791BEC2925009FB4FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641727771BEC2925009FB4FB /* Main.storyboard */; };
+		6417277B1BEC2925009FB4FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6417277A1BEC2925009FB4FB /* Assets.xcassets */; };
+		6417277E1BEC2925009FB4FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6417277C1BEC2925009FB4FB /* LaunchScreen.storyboard */; };
+		6417278A1BEC292F009FB4FB /* MryNavigationInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 641727871BEC292F009FB4FB /* MryNavigationInteractiveTransition.m */; };
+		6417278B1BEC292F009FB4FB /* MryPopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 641727891BEC292F009FB4FB /* MryPopAnimation.m */; };
+		6417278E1BEC2956009FB4FB /* MryNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6417278D1BEC2956009FB4FB /* MryNavigationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6417276B1BEC2925009FB4FB /* MryNavigationInteractiveTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MryNavigationInteractiveTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6417276F1BEC2925009FB4FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		641727711BEC2925009FB4FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		641727721BEC2925009FB4FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		641727741BEC2925009FB4FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		641727751BEC2925009FB4FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		641727781BEC2925009FB4FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6417277A1BEC2925009FB4FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6417277D1BEC2925009FB4FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6417277F1BEC2925009FB4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		641727861BEC292F009FB4FB /* MryNavigationInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MryNavigationInteractiveTransition.h; sourceTree = "<group>"; };
+		641727871BEC292F009FB4FB /* MryNavigationInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MryNavigationInteractiveTransition.m; sourceTree = "<group>"; };
+		641727881BEC292F009FB4FB /* MryPopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MryPopAnimation.h; sourceTree = "<group>"; };
+		641727891BEC292F009FB4FB /* MryPopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MryPopAnimation.m; sourceTree = "<group>"; };
+		6417278C1BEC2956009FB4FB /* MryNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MryNavigationController.h; sourceTree = "<group>"; };
+		6417278D1BEC2956009FB4FB /* MryNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MryNavigationController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		641727681BEC2925009FB4FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		641727621BEC2924009FB4FB = {
+			isa = PBXGroup;
+			children = (
+				6417276D1BEC2925009FB4FB /* MryNavigationInteractiveTransition */,
+				6417276C1BEC2925009FB4FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6417276C1BEC2925009FB4FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6417276B1BEC2925009FB4FB /* MryNavigationInteractiveTransition.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6417276D1BEC2925009FB4FB /* MryNavigationInteractiveTransition */ = {
+			isa = PBXGroup;
+			children = (
+				641727851BEC292F009FB4FB /* MryNavigationInteractiveTransition */,
+				641727711BEC2925009FB4FB /* AppDelegate.h */,
+				641727721BEC2925009FB4FB /* AppDelegate.m */,
+				641727741BEC2925009FB4FB /* ViewController.h */,
+				641727751BEC2925009FB4FB /* ViewController.m */,
+				6417278C1BEC2956009FB4FB /* MryNavigationController.h */,
+				6417278D1BEC2956009FB4FB /* MryNavigationController.m */,
+				641727771BEC2925009FB4FB /* Main.storyboard */,
+				6417277A1BEC2925009FB4FB /* Assets.xcassets */,
+				6417277C1BEC2925009FB4FB /* LaunchScreen.storyboard */,
+				6417277F1BEC2925009FB4FB /* Info.plist */,
+				6417276E1BEC2925009FB4FB /* Supporting Files */,
+			);
+			path = MryNavigationInteractiveTransition;
+			sourceTree = "<group>";
+		};
+		6417276E1BEC2925009FB4FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6417276F1BEC2925009FB4FB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		641727851BEC292F009FB4FB /* MryNavigationInteractiveTransition */ = {
+			isa = PBXGroup;
+			children = (
+				641727861BEC292F009FB4FB /* MryNavigationInteractiveTransition.h */,
+				641727871BEC292F009FB4FB /* MryNavigationInteractiveTransition.m */,
+				641727881BEC292F009FB4FB /* MryPopAnimation.h */,
+				641727891BEC292F009FB4FB /* MryPopAnimation.m */,
+			);
+			path = MryNavigationInteractiveTransition;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6417276A1BEC2925009FB4FB /* MryNavigationInteractiveTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 641727821BEC2925009FB4FB /* Build configuration list for PBXNativeTarget "MryNavigationInteractiveTransition" */;
+			buildPhases = (
+				641727671BEC2925009FB4FB /* Sources */,
+				641727681BEC2925009FB4FB /* Frameworks */,
+				641727691BEC2925009FB4FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MryNavigationInteractiveTransition;
+			productName = MryNavigationInteractiveTransition;
+			productReference = 6417276B1BEC2925009FB4FB /* MryNavigationInteractiveTransition.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		641727631BEC2924009FB4FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = mryun11;
+				TargetAttributes = {
+					6417276A1BEC2925009FB4FB = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 641727661BEC2924009FB4FB /* Build configuration list for PBXProject "MryNavigationInteractiveTransition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 641727621BEC2924009FB4FB;
+			productRefGroup = 6417276C1BEC2925009FB4FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6417276A1BEC2925009FB4FB /* MryNavigationInteractiveTransition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		641727691BEC2925009FB4FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6417277E1BEC2925009FB4FB /* LaunchScreen.storyboard in Resources */,
+				6417277B1BEC2925009FB4FB /* Assets.xcassets in Resources */,
+				641727791BEC2925009FB4FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		641727671BEC2925009FB4FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6417278E1BEC2956009FB4FB /* MryNavigationController.m in Sources */,
+				6417278A1BEC292F009FB4FB /* MryNavigationInteractiveTransition.m in Sources */,
+				641727761BEC2925009FB4FB /* ViewController.m in Sources */,
+				641727731BEC2925009FB4FB /* AppDelegate.m in Sources */,
+				641727701BEC2925009FB4FB /* main.m in Sources */,
+				6417278B1BEC292F009FB4FB /* MryPopAnimation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		641727771BEC2925009FB4FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				641727781BEC2925009FB4FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6417277C1BEC2925009FB4FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6417277D1BEC2925009FB4FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		641727801BEC2925009FB4FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		641727811BEC2925009FB4FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		641727831BEC2925009FB4FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MryNavigationInteractiveTransition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mryun11.MryNavigationInteractiveTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		641727841BEC2925009FB4FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MryNavigationInteractiveTransition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mryun11.MryNavigationInteractiveTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		641727661BEC2924009FB4FB /* Build configuration list for PBXProject "MryNavigationInteractiveTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				641727801BEC2925009FB4FB /* Debug */,
+				641727811BEC2925009FB4FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		641727821BEC2925009FB4FB /* Build configuration list for PBXNativeTarget "MryNavigationInteractiveTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				641727831BEC2925009FB4FB /* Debug */,
+				641727841BEC2925009FB4FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 641727631BEC2924009FB4FB /* Project object */;
+}
