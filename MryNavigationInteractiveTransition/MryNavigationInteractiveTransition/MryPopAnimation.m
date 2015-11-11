@@ -50,10 +50,15 @@
     //模拟系统动画
     CATransform3D t = CATransform3DMakeTranslation(- [UIScreen mainScreen].bounds.size.width / 3,0,0);
     
-    [self setAnchorPoint:CGPointMake(0.0, 0.5) forView:toViewController.view];
-    [self setAnchorPoint:CGPointMake(1.0, 0.5) forView:fromViewController.view];
+//    [self setAnchorPoint:CGPointMake(0.0, 0.5) forView:toViewController.view];
+//    [self setAnchorPoint:CGPointMake(1.0, 0.5) forView:fromViewController.view];
     
     toViewController.view.layer.transform = t;
+    
+    CGRect rect = toViewController.view.frame;
+    rect.origin.x = - [UIScreen mainScreen].bounds.size.width / 3;
+    toViewController.view.frame = rect;
+    
     
     /**
      *  执行动画，我们让fromVC的视图移动到屏幕最右侧
